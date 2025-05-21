@@ -1,0 +1,48 @@
+.castList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.castItem {
+    width: 120px;
+    text-align: center;
+    display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        color: #333;
+        transition: background-color 0.3s ease;
+        border-radius: 8px;
+        padding: 8px;
+}
+
+
+.castImg {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease;
+}
+
+.castImage:hover {
+    transform: scale(2.05);
+}
+
+.castName {
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.castCharacter {
+    font-size: 0.9rem;
+    color: #555;
+}

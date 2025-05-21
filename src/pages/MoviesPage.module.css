@@ -1,0 +1,23 @@
+.main {
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+    min-height: calc(100vh - 50px);
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2a4d69;
+}
+
+.noResults {
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}

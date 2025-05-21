@@ -1,0 +1,45 @@
+form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1392a0;
+    box-shadow: 0 0 5px rgba(21, 153, 189, 0.5);
+}
+
+button {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #1392a0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1392a0;
+}
+
+button:active {
+    background-color: #1392a0;
+}
+
+button:focus {
+    outline: 2px solid #1392a0;
+    outline-offset: 2px;
+}

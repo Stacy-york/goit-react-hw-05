@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { searchMovies } from '../api/tmdb';
 import SearchForm from '../components/SearchForm';
 import MovieList from '../components/MovieList';
+import css from './MoviesPage.module.css';
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -33,10 +34,14 @@ const MoviesPage = () => {
   };
 
   return (
-    <main>
-      <h1>Search movies</h1>
+    <main className={css.main}>
+      <h1 className={css.title}>Search movies</h1>
       <SearchForm onSubmit={handleSearchSubmit} />
-      <MovieList movies={movies} />
+      {movies.length === 0 && query !== '' ? (
+        <p className={css.noResults}>No movies found for "{query}"</p>
+      ) : (
+        <MovieList movies={movies} />
+      )}
     </main>
   );
 };
